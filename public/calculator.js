@@ -4,7 +4,7 @@ var p = document.getElementsByTagName('p');
 var input = document.getElementsByTagName('input');
 
 //dynamic creating java script 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 5; i++) {
   addColumn()
 }
 
