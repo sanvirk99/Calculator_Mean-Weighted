@@ -1,123 +1,71 @@
 <!DOCTYPE html>
+
 </html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Grade Calculator</title>
-        <link rel="stylesheet" href="./stylesheets/calculator.css">
-    </head>
 
-    
-    <body class="backround">
-        <main> 
+<head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="./stylesheets/calculator.css">
 
+</head>
+
+
+<body class="backround">
+    <main>
+        <div>
             <div class="centerbox">
-                
-                <h1 id="black">Grade Calculator</h1> 
 
-                <div class="grey" >
+
+                <h1 id="black">Grade Calculator</h1>
+
+                <div class="grey">
 
                     <h2 class="red">Activities</h2>
+                    <b id="warning">invalid or empty entry will be considered 0%, delete unused activity</b>
+                    <div class="table_scroll">
+                        <table id="table">
 
-                    <table id="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Short Name</th>
+                                <th>Weight</th>
+                                <th>Grade</th>
+                                <th>Percent</th>
+                            </tr>
 
-                        <tr>
-                            <th>Name</th>
-                            <th>Short Name</th>
-                            <th>Weight</th>
-                            <th>Grade</th>
-                            <th>Percent</th>
-                        </tr>
-
-                        <tr>
-                            <td>Activity 1</td>
-                            <td>A1</td>
-                            <td>
-                                <input type="number"  ></input>
-                            </td>
-                            <td>
-                                <input type="number" ></input>/<input type="number" ></input>
-                            </td>
-
-                            <td></td>
-
-                        </tr>
-
-                        <tr>
-                            <td>Activity 1</td>
-                            <td>A1</td>
-                            <td>
-                                <input type="number"  ></input>
-                            </td>
-                            <td>
-                                <input type="number" ></input>/<input type="number" ></input>
-                            </td>
-
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td>Activity 1</td>
-                            <td>A1</td>
-                            <td>
-                                <input type="number"  ></input>
-                            </td>
-                            <td>
-                                <input type="number" ></input>/<input type="number" ></input>
-                            </td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td>Activity 1</td>
-                            <td>A1</td>
-                            <td>
-                                <input type="number"  ></input>
-                            </td>
-                            <td>
-                                <input type="number" ></input>/<input type="number" ></input>
-                            </td>
-                            <td></td>
-
-                        </tr>
-                        <tr>
-                            <td>Activity 1</td>
-                            <td>A1</td>
-                            <td>
-                                <input type="number"  ></input>
-                            </td>
-                            <td>
-                                <input type="number" ></input>/<input type="number" ></input>
-                            </td>
-                            <td></td>
-
-                        </tr>
+                        </table>
+                    </div>
 
 
-                        
-
-
-                    </table>
-
-                    <button class="buttons">
-                        ADD ACTIVITY 
+                    <button class="buttons" id="add_activity">
+                        ADD ACTIVITY
+                    </button>
+                    <button class="buttons" id="delete_activity">
+                        DELETE ACTIVITY
                     </button>
 
                     <h2 class="red">Result</h2>
+
+                    <p id="result">Press WEIGHTED or MEAN to obtain result</p>
                     
+                    <br></br>
+
                     <div class="buttons_bottom">
-                        <button class="buttons">
-                            WEIGHTED 
+                        <button class="buttons" id="weight">
+                            WEIGHTED
                         </button>
-                        <button class="buttons">
+                        <button class="buttons" id="mean">
                             MEAN
                         </button>
                     </div>
-                
+
                 </div>
 
+
             </div>
-            
-            
-        </main>
-    </body>
+        </div>
+    </main>
+    <script type="text/javascript" src="./calculator.js"></script>
+</body>
+
 </html>

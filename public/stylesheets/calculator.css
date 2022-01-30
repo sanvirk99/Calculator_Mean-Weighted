@@ -1,3 +1,17 @@
+.table_scroll{
+
+
+    overflow:scroll;
+    height: 250px;;
+    overflow-x: hidden;
+    border-collapse: collapse;
+    border: 2px solid;
+    
+
+
+}
+
+
 #table {
 
   font-size: 1vw;
@@ -40,7 +54,7 @@ table td {
     left:1%;
     right:25%;
     width: 65%;
-    bottom: 15%;
+    bottom: auto;
     
 }
 
@@ -57,6 +71,19 @@ div.buttons_bottom{
     color: #CC0633;
     font-size: 1.5vw;
 }
+
+#result {
+
+    color: #CC0633;
+    font-size: 1vw;
+}
+
+#warning {
+
+    color: #CC0633;
+    font-size: 1vw;
+}
+
 .black{
     color:black;
 }
@@ -85,9 +112,10 @@ div.buttons_bottom{
     
     
     background-color: white;
-    margin: auto;
+   
     border-top:25px solid black;
-    border-bottom:40px solid black;
+    border-bottom:40px solid black; 
+    margin: auto;
     position: fixed;
     top: 0%;
     left:10%;
@@ -103,7 +131,7 @@ div.buttons_bottom{
 input {
 
     font-size: 1vw;
-    max-width: 25%;
+    width: 35%;
   
 }
 
