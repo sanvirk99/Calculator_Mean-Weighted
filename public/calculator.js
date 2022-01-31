@@ -46,6 +46,7 @@ function UpdateWeighted(e) {
   var toAdd = oRows.length - 1;
   var num = 0;
   var x = 0;
+
   var den = 0;
   for (let i = 0; i < toAdd; i++) {
 
@@ -54,7 +55,7 @@ function UpdateWeighted(e) {
       x = 0;
       p[i].textContent = 0 + "%";
     }
-    den += parseInt(input[i * 3].value);
+    den += parseFloat(input[i * 3].value);
     num += x;
   }
 
@@ -87,11 +88,11 @@ function addColumn() {
 
 
   //disable negative input plus scroll limit 0
-  cell3.innerHTML = '<input type="number" class="calculate" oninput="validity.valid||(value=\'\');" min="0"></input>';
-  cell4.innerHTML = '<input type="number" class="calculate" oninput="validity.valid||(value=\'\');"min="0"></input> / ';
+  cell3.innerHTML = '<input type="number" class="calculate" oninput="validity.valid||(value=\'\');" min="0" step="0.01" placeholder="0"></input>';
+  cell4.innerHTML = '<input type="number" class="calculate" oninput="validity.valid||(value=\'\');"min="0"step="0.01" placeholder="0"></input> / ';
   //min 1 for denominator 
-  cell4.innerHTML += '<input type="number" class="calculate" oninput="validity.valid||(value=\'\');"min="0"></input>';
-  cell5.innerHTML = '<p </p>'
+  cell4.innerHTML += '<input type="number" class="calculate" oninput="validity.valid||(value=\'\');"min="0"step="0.01" placeholder="0"></input>';
+  cell5.innerHTML = '<p>0%</p>'
 
 
   var percent_row = iRowCount - 1;

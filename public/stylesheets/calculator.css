@@ -55,6 +55,9 @@ table td {
     right:25%;
     width: 65%;
     bottom: auto;
+    border:#c8d4da;
+    border-style: solid;
+    border-width: thick;
     
 }
 
